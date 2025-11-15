@@ -15,11 +15,15 @@ const Tutor = require('./Tutor');
 // Tutor - Paciente (1:N)
 Tutor.hasMany(Paciente, {
     foreignKey: 'tutor_id',
-    as: 'pacientes'
+    as: 'pacientes',
+    onDelete: 'RESTRICT',
+    onUpdate: 'CASCADE'
 });
 Paciente.belongsTo(Tutor, {
     foreignKey: 'tutor_id',
-    as: 'tutor'
+    as: 'tutor',
+    onDelete: 'RESTRICT',
+    onUpdate: 'CASCADE'
 });
 
 // Doctor - Consulta (1:N)

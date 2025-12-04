@@ -11,6 +11,7 @@ const OrdenMedica = require('./OrdenMedica');
 const OrdenMedicamento = require('./ordenMedicamento');
 const Paciente = require('./Paciente');
 const Tutor = require('./Tutor');
+const Usuario = require('./Usuario');
 
 // Tutor - Paciente (1:N)
 Tutor.hasMany(Paciente, {
@@ -115,5 +116,6 @@ module.exports = {
     OrdenMedica,
     OrdenMedicamento,
     Paciente,
-    Tutor
+    Tutor,
+    Usuario
 };

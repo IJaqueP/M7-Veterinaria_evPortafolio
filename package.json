@@ -1,9 +1,33 @@
 {
+  "name": "m7-evportafolio-ivan",
+  "version": "1.0.0",
+  "description": "API Veterinaria - Gestión con Autenticación JWT y Subida de Archivos",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "api",
+    "veterinaria",
+    "sequelize",
+    "postgresql",
+    "jwt",
+    "authentication"
+  ],
+  "author": "Iván Jaque Pinto",
+  "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
+    "express-fileupload": "^1.5.2",
+    "jsonwebtoken": "^9.0.2",
     "pg": "^8.16.3",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
